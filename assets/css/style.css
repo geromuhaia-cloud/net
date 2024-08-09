@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .2s linear;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #FFF;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+.menu{
+    display: none;
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    background: #FFF;
+    left: 0;
+    padding: 10px 70px;
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.10);
+}
+header .logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 10px;
+}
+header .logo img{
+    width: 60px;
+    height: 40px;
+}
+header .logo .highlight{
+    color: #ff4500;
+}
+
+.login-btn{
+    position: absolute;
+    float: right;
+    right: 10px;
+    top: 20px;
+    letter-spacing: 1px;
+    background: transparent;
+    border: 1.5px solid #4263eb;
+    padding: 4px 15px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4263eb;
+    border-radius: 20px;
+}
+
+header .mini-text{
+    position: relative;
+    margin-top: -5px;
+    background: #FFF;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #999;
+    margin-left: 40px;
+    text-transform: capitalize;
+}
+.nav-bar{
+    display: flex;
+margin-right: 40px;}
+.nav-bar .nav-list{
+    list-style: none;
+}
+.nav-bar .nav-list .nav-link{
+    padding: 6px 15px;
+    text-decoration: none;
+    font-weight: normal;
+    color: #4263eb;
+    border-radius: 5px;
+}
+
+.nav-bar .nav-list .nav-link:hover{
+    background: #ff4500;
+    color: #FFF;
+}
+
+main{
+    padding-top: 60px;
+}
+
+/****============================================================***/
+/****===================AREA 1 DAS SECCOES=======================***/
+/****============================================================***/
+section{
+    height: auto;
+    background-image: url('../img/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    padding: 80px 0px;
+}
+.main-info{
+    padding: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: #333;
+}
+
+.main-info .heading{
+    font-size: 5rem;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.main-info .content-text{
+    text-align: center;
+    padding: 15px 50px;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+.search-bar{
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.search-bar .search{
+    border: 2px solid #4263eb;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 33px;
+    width: 400px;
+    align-items: center;
+    line-height: 40px;
+    font-size: 16px;
+    height: 40px;
+    outline: none;
+}
+
+.search-bar .fa{
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 10px;
+    color: #4263eb;
+    font-size: 18px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.box{
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    background: #FFF;
+    width: 300px;
+    padding: 0px 10px 25px;
+    box-shadow: 2px 2px 12px #000;
+    border-radius: 10px;
+    margin-top: -100vh;
+    align-items: center;
+    transition: 0.6s ease-in-out;
+    justify-content: center;
+}
+.box .text{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 15px;
+}
+#box1{
+    display: none;
+}
+.box .forget{
+    text-decoration: none;
+}
+
+.box .bottom{
+    text-align: center;
+}
+.box .bottom a{
+    text-decoration: none;
+    border: 1.5px solid #000;
+    padding: 7px 95px;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.box .option{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -8px;
+    font-size: 13px;
+    color: #333;
+    padding: 0px 7px;
+    background: #FFF;
+}
+.box .border{
+    width: 100%;
+    height: 1px;
+    background: #333;
+    margin: 10px 0px;
+}
+input{
+    width: 100%;
+    height: 37px;
+    border: 1.5px solid #4263eb;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 25px;
+    margin: 7px 0px;
+}
+input[type="submit"]{
+    padding-left: 0;
+    background: #4263eb;
+    color: #FFF;
+    font-weight: 600;
+}
+label{
+    position: absolute;
+    left: 15px;
+    float: left;
+    margin-top: 17px;
+}
+
+
+section:nth-child(2){
+    background: #999;
+    height: 100vh;
+}
+section:nth-child(3){
+    background: #ff4500;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+/****============================================================***/
+/****============================================================***/
+/****============================================================***/
+
+@media  screen and (max-width: 700px) {
+    header{
+        padding: 0px 10px;
+    }
+    header .logo{
+        font-size: 20px;
+    }
+    .nav-bar{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        width: fit-content;
+        height: auto;
+    }
+    .line1, .line2, .line3{
+        width: 25px;
+        height: 2px;
+        margin: 5px;
+        border-radius: 50px;
+        background: #4263eb;
+        transition: 0.3s;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 10px;
+        background: #FFF;
+        box-shadow: 2px 2px 2px rgb(0,0,0,0.10);
+        position: relative;
+        transition: 0.4s;
+    }
+    .login-btn{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    header{
+        display: block;
+        height: auto;
+        padding: 0px;
+    }
+    header .logo{
+        font-size: 20px;
+    }
+    header .mini-text{
+        margin-left: 20px;
+    }
+    .nav-bar{
+        display: block;
+        background: #222;
+        position: fixed;
+        width: 80%;
+        padding: 20px 0px;
+        height: 100vh;
+        margin-left: -100vh;
+        transition: 0.3s;
+    }
+    .nav-bar.open{
+        margin-left: 0;
+        box-shadow: 0 1000px 0 1000px rgb(0,0,0,0.25);
+    }
+    .active .line1{
+        transform: translate(0px, 7px) rotate(45deg);
+    }
+    .active .line2{
+        opacity: 0;
+    }
+    .active .line3{
+        transform: translate(0px, -7px) rotate(-45deg);
+    }
+    
+    .nav-bar .nav-list{
+        height: auto;
+    }
+    .nav-bar .nav-list .nav-link{
+        padding: 10px;
+        color: #FFF;
+        font-weight: bold;
+        display: block;
+    }
+
+    .nav-bar .nav-list .nav-link.active{
+        color: #ff4500;
+    }
+    .null{
+        display: block;
+        margin: 0px 10px 0px 0px;
+    }
+
+    .search-bar .search{
+        width: 300px;
+    }
+
+    .main-info{
+        width: 100%;
+    }
+    .main-info .heading{
+        font-size: 3.5rem;
+    }
+
+}
